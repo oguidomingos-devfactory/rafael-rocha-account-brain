@@ -4,6 +4,11 @@
 cliente:
   nome: "Dr. Rafael Rocha — Clínica Santa Isabel"
   slug: "rafael-rocha"
+  keywords:
+    - "Dr. Rafael"
+    - "Rafael Rocha"
+    - "Santa Isabel"
+    - "Clínica Santa Isabel"
   inicio: ""
   plano: ""
   valor_mensal: ""
