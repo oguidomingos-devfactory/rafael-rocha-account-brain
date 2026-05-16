@@ -24,3 +24,15 @@
 | 2026-05-16 23:30 UTC | DES-214 sync | Dr. Rafael: Alteracoes na proposta do rafael DES-198 [done] |
 | 2026-05-16 23:30 UTC | DES-195 sync | Dr. Rafael: Criativos Meta Ads — Clínica de Fisioterapia Santa Isabel [done] |
 | 2026-05-16 23:30 UTC | DES-194 sync | Dr. Rafael: Design Posts Instagram — Clínica de Fisioterapia Santa Isabel (1 mês) [done] |
+| 2026-05-16 23:55 UTC | DES-337 | criado | Dr. Rafael: Dr. Rafael Rocha — Calendário Editorial 3 Meses + Base Narrativa + Roteiros (DOCX) |
+| 2026-05-16 23:55 UTC | DES-219 | criado | Dr. Rafael: DES-216: Guia de estilo para posts e referência visual |
+| 2026-05-16 23:55 UTC | DES-216 | criado | Dr. Rafael: Design: Guia de Estilo e Integração de Imagem de Referência (DES-214) |
+| 2026-05-16 23:55 UTC | DES-215 | criado | Dr. Rafael: Implementar nova estrutura da proposta Santa Isabel (DES-214) |
+| 2026-05-16 23:55 UTC | DES-193 | criado | Dr. Rafael: Copy Posts Instagram + Estratégia — Clínica de Fisioterapia Santa Isabel |
+| 2026-05-16 23:55 UTC | DES-192 | criado | Dr. Rafael: Site Premium — Clínica de Fisioterapia Santa Isabel |
+| 2026-05-16 23:55 UTC | DES-191 | criado | Dr. Rafael: Identidade Visual — Clínica de Fisioterapia Santa Isabel |
+| 2026-05-16 23:55 UTC | DES-196 | criado | Dr. Rafael: Landing Page Alta Conversão — Clínica de Fisioterapia Santa Isabel |
+| 2026-05-16 23:55 UTC | DES-360 | criado | Dr. Rafael: Atualize a ID visual, faça um manual de marca completasso com cores, aplicacoes, um pouco da essencia do Dr Rafael e por ai vai. Faça um design.md depois tambem seguindo a referencia como base |
+| 2026-05-16 23:55 UTC | DES-214 | criado | Dr. Rafael: Alteracoes na proposta do rafael DES-198 |
+| 2026-05-16 23:55 UTC | DES-195 | criado | Dr. Rafael: Criativos Meta Ads — Clínica de Fisioterapia Santa Isabel |
+| 2026-05-16 23:55 UTC | DES-194 | criado | Dr. Rafael: Design Posts Instagram — Clínica de Fisioterapia Santa Isabel (1 mês) |
