@@ -84,3 +84,7 @@
 | 2026-05-25 20:00 UTC | DES-214 sync | Dr. Rafael: Alteracoes na proposta do rafael DES-198 [done] |
 | 2026-05-25 20:00 UTC | DES-195 sync | Dr. Rafael: Criativos Meta Ads — Clínica de Fisioterapia Santa Isabel [done] |
 | 2026-05-25 20:00 UTC | DES-194 sync | Dr. Rafael: Design Posts Instagram — Clínica de Fisioterapia Santa Isabel (1 mês) [done] |
+| 2026-05-25 20:04 UTC | DES-680 | status: todo → in_progress | Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
+| 2026-05-25 20:04 UTC | DES-664 | status: in_progress → todo | Dr. Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
+| 2026-05-25 20:04 UTC | DES-693 | status: in_progress → done | Dr. Rafael Rocha: Triagem |
+| 2026-05-25 20:04 UTC | DES-707 | criado | Dr. Rafael Rocha: Preview LP + Proposta |
