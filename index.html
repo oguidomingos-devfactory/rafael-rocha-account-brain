@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Fisioterapia Santa Isabel - Dr. Rafael Rocha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafaf8; }
+        
+        /* Colors: Midnight, Sage, Dourado, Cream */
+        :root {
+            --midnight: #0a0e27;
+            --sage: #7a8b6f;
+            --dourado: #b8860b;
+            --cream: #fdfbf6;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--midnight) 0%, #0d1a3a 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover { color: var(--dourado); }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--midnight) 0%, var(--sage) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            background: var(--dourado);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        
+        .cta-button:hover {
+            background: #a07608;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Specialties Section */
+        .specialties {
+            padding: 80px 20px;
+            background: white;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--midnight);
+        }
+        
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .specialty-card {
+            background: var(--cream);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid var(--dourado);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: slideUp 0.6s ease-out forwards;
+        }
+        
+        .specialty-card:nth-child(n) { animation-delay: calc(0.1s * var(--index)); }
+        .specialty-card:nth-child(1) { --index: 1; }
+        .specialty-card:nth-child(2) { --index: 2; }
+        .specialty-card:nth-child(3) { --index: 3; }
+        .specialty-card:nth-child(4) { --index: 4; }
+        .specialty-card:nth-child(5) { --index: 5; }
+        .specialty-card:nth-child(6) { --index: 6; }
+        
+        .specialty-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .specialty-card h3 {
+            color: var(--sage);
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .specialty-card p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        /* Differentials Section */
+        .differentials {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--midnight) 0%, #0d1a3a 100%);
+            color: white;
+        }
+        
+        .differentials .section-title {
+            color: white;
+        }
+        
+        .diff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        
+        .diff-item {
+            text-align: center;
+        }
+        
+        .diff-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .diff-item h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dourado);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 60px 20px;
+            background: var(--cream);
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--midnight);
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        .modal-content {
+            background: white;
+            margin: 5% auto;
+            padding: 40px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover { color: black; }
+        
+        .modal h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--midnight);
+            margin-bottom: 30px;
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-card {
+            border: 2px solid #eee;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .pricing-card:hover {
+            border-color: var(--dourado);
+            box-shadow: 0 4px 12px rgba(184, 134, 11, 0.1);
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--dourado);
+            background: var(--cream);
+            transform: scale(1.05);
+        }
+        
+        .plan-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--midnight);
+            margin-bottom: 10px;
+        }
+        
+        .plan-price {
+            font-size: 2rem;
+            color: var(--dourado);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .plan-price small {
+            font-size: 0.6em;
+            display: block;
+            color: #999;
+        }
+        
+        .plan-features {
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .plan-features li {
+            list-style: none;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .plan-features li:before {
+            content: "✓ ";
+            color: var(--dourado);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .footer {
+            background: var(--midnight);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer p {
+            margin-bottom: 15px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .section-title { font-size: 1.8rem; }
+            .header-content { flex-direction: column; }
+            nav a { margin-left: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Santa Isabel</div>
+            <nav>
+                <a href="#specialties">Especialidades</a>
+                <a href="#contact" onclick="openProposal()">Proposta</a>
+                <a href="tel:613301-7187">(61) 3301-7187</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Recuperação é Nossa Missão</h1>
+        <p>Maior centro de reabilitação do DF com 46 anos de experiência em fisioterapia especializada</p>
+        <button class="cta-button" onclick="openProposal()">Ver Proposta Comercial</button>
+    </section>
+
+    <section id="specialties" class="specialties">
+        <div class="container">
+            <h2 class="section-title">Nossas Especialidades</h2>
+            <div class="specialty-grid">
+                <div class="specialty-card">
+                    <h3>Traumato-Ortopédica</h3>
+                    <p>Reabilitação completa para lesões e pós-cirurgias ortopédicas com foco em restauração da mobilidade</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>Neurológica</h3>
+                    <p>Tratamento especializado para sequelas neurológicas, AVC e disfunções neuromotoras</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>Fisioterapia Aquática</h3>
+                    <p>Piscina terapêutica com temperatura controlada para reabilitação sem impacto</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>Cardiorrespiratória</h3>
+                    <p>Reabilitação cardíaca e respiratória com monitoramento contínuo</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>Pilates & RPG</h3>
+                    <p>Exercícios globais e reeducação postural para alinhamento corporal</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>Acupuntura & Osteopatia</h3>
+                    <p>Terapias complementares para dor crônica e disfunções estruturais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="differentials">
+        <div class="container">
+            <h2 class="section-title">Por Que Santa Isabel?</h2>
+            <div class="diff-grid">
+                <div class="diff-item">
+                    <div class="diff-icon">🏆</div>
+                    <h4>46 Anos de Tradição</h4>
+                    <p>Instituição consolidada, credibilidade e expertise comprovadas</p>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">👥</div>
+                    <h4>Equipe Humanizada</h4>
+                    <p>14+ especialidades com profissionais dedicados a cada paciente</p>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">💧</div>
+                    <h4>Infraestrutura Premium</h4>
+                    <p>Piscina aquática, estúdio Pilates, salas climatizadas</p>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">🤝</div>
+                    <h4>Convênios Aceitos</h4>
+                    <p>Geap Saúde e principais operadoras de saúde</p>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">⏰</div>
+                    <h4>Horários Flexíveis</h4>
+                    <p>Seg-Sex 8h-20h para sua conveniência</p>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">📍</div>
+                    <h4>Localização Estratégica</h4>
+                    <p>Rua 15, Lote 26, Guará II — Brasília/DF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para sua recuperação?</h2>
+            <button class="cta-button" onclick="openProposal()">Conheça Nossos Planos</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <p><strong>Clínica de Fisioterapia Santa Isabel</strong></p>
+            <p>📞 (61) 3301-7187 | 📧 atendimento@fisiosantaisabel.com.br</p>
+            <p>🌐 fisiosantaisabel.com.br | 📱 @fisiosantaisabel</p>
+            <p style="font-size: 12px; margin-top: 20px; opacity: 0.8;">© 2026 Clínica Santa Isabel. Todos os direitos reservados.</p>
+        </div>
+    </section>
+
+    <!-- Proposal Modal -->
+    <div id="proposalModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProposal()">&times;</span>
+            <h2>Proposta Comercial — Planos de Atendimento</h2>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Plano Essencial</h3>
+                    <div class="plan-price">R$ 450<small>/mês</small></div>
+                    <ul class="plan-features">
+                        <li>Avaliação inicial completa</li>
+                        <li>2 sessões de fisioterapia/semana</li>
+                        <li>Monitoria em grupo</li>
+                        <li>Orientações posturais básicas</li>
+                    </ul>
+                    <button class="cta-button" onclick="alert('Agende sua avaliação!')">Contratar</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3 class="plan-name">Plano Profissional</h3>
+                    <div class="plan-price">R$ 790<small>/mês</small></div>
+                    <ul class="plan-features">
+                        <li>Avaliação + diagnóstico cinesiológico</li>
+                        <li>3-4 sessões de fisioterapia/semana</li>
+                        <li>Acesso Pilates 2x/semana</li>
+                        <li>Orientações personalizadas</li>
+                        <li>Relatório mensal de progresso</li>
+                    </ul>
+                    <button class="cta-button" onclick="alert('Agende sua avaliação!')">Contratar</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3 class="plan-name">Plano Premium</h3>
+                    <div class="plan-price">R$ 1.290<small>/mês</small></div>
+                    <ul class="plan-features">
+                        <li>Avaliação multidisciplinar completa</li>
+                        <li>5+ sessões de fisioterapia/semana</li>
+                        <li>Acesso ilimitado Pilates</li>
+                        <li>Fisioterapia aquática incluída</li>
+                        <li>Acompanhamento nutricional</li>
+                        <li>Relatório mensal detalhado</li>
+                    </ul>
+                    <button class="cta-button" onclick="alert('Agende sua avaliação!')">Contratar</button>
+                </div>
+            </div>
+
+            <div style="background: var(--cream); padding: 30px; border-radius: 8px; margin-top: 30px;">
+                <h3 style="color: var(--midnight); margin-bottom: 15px; font-family: 'Playfair Display', serif;">Próximos Passos</h3>
+                <ol style="color: #666; line-height: 2;">
+                    <li><strong>Agendamento:</strong> Entre em contato para agendar avaliação sem compromisso</li>
+                    <li><strong>Diagnóstico:</strong> Fisioterapeuta especializado avalia sua condição</li>
+                    <li><strong>Plano Personalizado:</strong> Elaboramos seu plano de tratamento</li>
+                    <li><strong>Início do Tratamento:</strong> Recuperação com suporte profissional completo</li>
+                </ol>
+            </div>
+
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; text-align: center;">
+                <p style="color: var(--midnight); font-weight: 600; margin-bottom: 15px;">Dúvidas? Entre em contato</p>
+                <p style="color: #666; margin-bottom: 15px;">
+                    📞 <strong>(61) 3301-7187</strong> | 📧 <strong>atendimento@fisiosantaisabel.com.br</strong>
+                </p>
+                <p style="color: #999; font-size: 12px;">
+                    Os valores podem sofrer alterações conforme a avaliação e necessidades específicas do paciente.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openProposal() {
+            document.getElementById("proposalModal").style.display = "block";
+        }
+
+        function closeProposal() {
+            document.getElementById("proposalModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("proposalModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
