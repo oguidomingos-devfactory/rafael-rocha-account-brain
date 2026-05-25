@@ -88,3 +88,21 @@
 | 2026-05-25 20:04 UTC | DES-664 | status: in_progress → todo | Dr. Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
 | 2026-05-25 20:04 UTC | DES-693 | status: in_progress → done | Dr. Rafael Rocha: Triagem |
 | 2026-05-25 20:04 UTC | DES-707 | criado | Dr. Rafael Rocha: Preview LP + Proposta |
+| 2026-05-25 20:14 UTC | DES-678 | atualizado | Dr. Rafael Rocha: Preview LP + Proposta |
+| 2026-05-25 20:14 UTC | DES-719 | criado | Dr. Rafael Rocha: 12: Copywriting e TSL |
+| 2026-05-25 20:14 UTC | DES-718 | criado | Dr. Rafael Rocha: 11: Arquitetura de Funis |
+| 2026-05-25 20:14 UTC | DES-717 | criado | Dr. Rafael Rocha: 10: Posicionamento |
+| 2026-05-25 20:14 UTC | DES-716 | criado | Dr. Rafael Rocha: 09: ICP e Persona |
+| 2026-05-25 20:14 UTC | DES-715 | criado | Dr. Rafael Rocha: 08: Plano de 90 Dias |
+| 2026-05-25 20:14 UTC | DES-714 | criado | Dr. Rafael Rocha: 07: Baseline de Métricas |
+| 2026-05-25 20:14 UTC | DES-713 | criado | Dr. Rafael Rocha: 06: Auditoria Digital |
+| 2026-05-25 20:14 UTC | DES-712 | criado | Dr. Rafael Rocha: 05: Análise de Concorrência |
+| 2026-05-25 20:14 UTC | DES-711 | criado | Dr. Rafael Rocha: 04: SWOT |
+| 2026-05-25 20:14 UTC | DES-710 | criado | Dr. Rafael Rocha: 03: Análise PESTLE |
+| 2026-05-25 20:14 UTC | DES-709 | criado | Dr. Rafael Rocha: 02: Business Model Canvas |
+| 2026-05-25 20:14 UTC | DES-708 | criado | Dr. Rafael Rocha: 01: Coleta e Onboarding |
+| 2026-05-25 20:19 UTC | DES-680 | atualizado | Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
+| 2026-05-25 20:24 UTC | DES-707 | atualizado | Dr. Rafael Rocha: Preview LP + Proposta |
+| 2026-05-25 20:24 UTC | DES-694 | status: todo → in_progress | Dr. Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
+| 2026-05-25 20:24 UTC | DES-650 | status: todo → in_progress | Dr. Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
+| 2026-05-25 20:24 UTC | DES-680 | status: in_progress → todo | Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
