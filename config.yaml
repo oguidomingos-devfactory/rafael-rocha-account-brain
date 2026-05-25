@@ -10,11 +10,11 @@ cliente:
     - "Santa Isabel"
     - "Clínica Santa Isabel"
   inicio: ""
-  plano: ""
+  plano: "essencial"
   valor_mensal: ""
   status: "ativo"
   contato:
-    nome: ""
+    nome: "Dr. Rafael Rocha"
     telefone: ""
     email: ""
 
@@ -42,5 +42,5 @@ sistemas:
     plataforma: ""
 
 drive:
-  pasta_raiz: ""
-  pasta_id: ""
+  pasta_raiz: "https://drive.google.com/drive/folders/1D3_TmP6BfoX0iuGnnrZjtHm_ZSBa3aZA"
+  pasta_id: "1D3_TmP6BfoX0iuGnnrZjtHm_ZSBa3aZA"
