@@ -54,3 +54,4 @@
 - LP preview: https://oguidomingos.github.io/rafael-rocha-lp/ (github.com/oguidomingos/rafael-rocha-lp)
 - Account brain: github.com/oguidomingos-devfactory/rafael-rocha-account-brain
 | 2026-05-25 | report | [inventario-artefatos-rafael.md](report/2026-05-25-inventario-artefatos-rafael.md) | https://drive.google.com/file/d/1eKNQAcEq-Mvu2xzdRoz_XsebvN6GW9jO/view?usp=drivesdk |
+| 2026-05-25 | site | [lp-clínica-santa-isabel.html](site/2026-05-25-lp-clínica-santa-isabel.html) | https://drive.google.com/file/d/1M02aej2iO4TCb-QsiybQxZMJjPChZaVv/view?usp=drivesdk |
