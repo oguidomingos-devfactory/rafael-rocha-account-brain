@@ -100,3 +100,6 @@
 | 2026-05-25 20:34 UTC | DES-680 | status: todo → in_progress | Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
 | 2026-05-25 20:34 UTC | DES-664 | status: todo → done | Dr. Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
 | 2026-05-25 20:39 UTC | DES-678 | atualizado | Dr. Rafael Rocha: Preview LP + Proposta |
+| 2026-05-25 20:44 UTC | DES-650 | status: in_progress → done | Dr. Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
+| 2026-05-25 20:44 UTC | DES-678 | atualizado | Dr. Rafael Rocha: Preview LP + Proposta |
+| 2026-05-25 20:54 UTC | DES-680 | status: in_progress → done | Rafael Rocha: Proposta Comercial + Preview (LP + Posts + Planos) |
